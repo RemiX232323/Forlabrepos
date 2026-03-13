@@ -1,36 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lab // Semantics</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="">Main</a></li>
-            <li><a href="">About us</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Contacts</a></li>
-        </ul>
-    </nav>
-    <h1>Ласкаво просимо на мій сайт!</h1>
-    
-    <p>Це мій <strong>перший досвід</strong> використання <em>Emmet</em> для швидкої верстки.</p>
-    <div class="card">
-        <img src="red.jpg" alt="Зображення товару">
-        <h3></h3>
-        <p></p>
-    </div>
-    <h2>Моя галерея</h2>
-    <div class="gallery">
-        <img src="red.jpg" alt="Червона картинка1">
-        <img src="red.jpg" alt="Червона картинка2">
-        <img src="red.jpg" alt="Червона картинка3">
-        <img src="red.jpg" alt="Червона картинка4">
-        <img src="red.jpg" alt="Червона картинка5">
-        <img src="red.jpg" alt="Червона картинка6">
-    </div>
+
+    <header>
+<nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="news.html">Новини та Блог</a></li>
+                <li><a href="#">Послуги</a></li>
+                <li><a href="#">Портфоліо</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="module">
+            <h1>> Ласкаво прошу_</h1>
+            <p>Система ініціалізована. Лабораторні роботи<strong>Emmet</strong> та <em>семантична верстка</em>.</p>
+        </section>
+
+        <section class="module product">
+            <img src="red.jpg" alt="Зображення товару">
+            <div class="product-info">
+                <h3>Червона картина</h3>
+                <p>Оптимізовано для більше червоного кольору</p>
+            </div>
+        </section>
+
+        <section class="module">
+            <h2>> Галерея</h2>
+            <div class="gallery-grid">
+                <img src="red.jpg" alt="Файл 1">
+                <img src="red.jpg" alt="Файл 2">
+                <img src="red.jpg" alt="Файл 3">
+                <img src="red.jpg" alt="Файл 4">
+                <img src="red.jpg" alt="Файл 5">
+                <img src="red.jpg" alt="Файл 6">
+            </div>
+        </section>
+    </main>
 </body>
 </html>
