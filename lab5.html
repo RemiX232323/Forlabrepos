@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 5 // Forms</title>
+    <link rel="stylesheet" href="lab5_style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="lab4.html">Таблиці</a></li>
+                <li><a href="lab5.html">Форми (Лаб 5)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>> Підписка_на_розсилку</h2>
+            
+            <form action="#" method="POST">
+                <label for="sub-name">Ім'я:</label>
+                <input type="text" id="sub-name" name="name" placeholder="Введіть ім'я">
+                
+                <label for="sub-email">Електронна пошта *:</label>
+                <input type="email" id="sub-email" name="email" required placeholder="sys@domain.com">
+
+                <button type="submit">> Підписатися</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>> Реєстрація_на_конференцію</h2>
+            
+            <form action="#" method="POST">
+                
+                <fieldset>
+                    <legend>> Контактна_інформація</legend>
+                    <label for="reg-name">ПІБ *:</label>
+                    <input type="text" id="reg-name" name="fullname" required minlength="3">
+
+                    <label for="reg-phone">Телефон:</label>
+                    <input type="tel" id="reg-phone" name="phone" pattern="[0-9]{10,12}" placeholder="380XXXXXXXXX">
+                </fieldset>
+
+                <fieldset>
+                    <legend>> Професійні_дані</legend>
+                    <label for="reg-role">Спеціалізація:</label>
+                    <select id="reg-role" name="role">
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="design">Design</option>
+                    </select>
+
+                    <p class="label-text">Досвід роботи:</p>
+                    <label class="inline"><input type="radio" name="exp" value="junior" checked> Junior</label>
+                    <label class="inline"><input type="radio" name="exp" value="middle"> Middle</label>
+                    <label class="inline"><input type="radio" name="exp" value="senior"> Senior</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>> Безпека_акаунту</legend>
+                    <label for="pwd1">Пароль * (мін. 8 символів):</label>
+                    <input type="password" id="pwd1" name="pwd1" required minlength="8">
+
+                    <label for="pwd2">Повторіть пароль *:</label>
+                    <input type="password" id="pwd2" name="pwd2" required 
+                           oninput="this.setCustomValidity(this.value != document.getElementById('pwd1').value ? 'Паролі не збігаються' : '')">
+                </fieldset>
+
+                <fieldset class="borderless">
+                    <label class="inline">
+                        <input type="checkbox" name="terms" required> Згоден з правилами *
+                    </label>
+                </fieldset>
+
+                <button type="submit">> Зареєструватися</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>

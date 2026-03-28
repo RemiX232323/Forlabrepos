@@ -1,0 +1,129 @@
+body {
+    background: #0d0d0d;
+    color: #a0aab2;
+    font-family: 'Consolas', monospace;
+    margin: 0;
+}
+
+header {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 15px 30px;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a:hover, 
+nav a.active {
+    color: #cc6666;
+    border-bottom: 1px solid;
+}
+
+main {
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+section {
+    background: #121212;
+    border: 1px solid #333;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #e5e5e5;
+    font-weight: normal;
+    margin-top: 0;
+    border-bottom: 1px dashed #333;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    border: 1px solid #333;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset.borderless {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    color: #cc6666;
+    padding: 0 10px;
+}
+
+label {
+    color: #e5e5e5;
+    font-size: 0.9em;
+}
+
+.label-text {
+    color: #e5e5e5;
+    font-size: 0.9em;
+    margin: 0;
+}
+
+label.inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #a0aab2;
+    cursor: pointer;
+}
+
+input:not([type="radio"]):not([type="checkbox"]), 
+select {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #a0aab2;
+    padding: 10px;
+    font-family: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:focus, 
+select:focus {
+    outline: none;
+    border-color: #cc6666;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #cc6666;
+    color: #cc6666;
+    padding: 12px;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: #cc6666;
+    color: #0d0d0d;
+}
