@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 6: CSS Стилізація</title>
+    <link rel="stylesheet" href="lab6_style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="lab4.html">Таблиці</a></li>
+                <li><a href="lab5.html">Форми (Лаб 5)</a></li>
+                <li><a href="lab6.html" class="active">CSS Галерея (Лаб 6)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>> Розклад_занять</h2>
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Час</th>
+                        <th>Понеділок</th>
+                        <th>Вівторок</th>
+                        <th>Середа</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:30 - 10:05</td>
+                        <td>Вища математика</td>
+                        <td>-</td>
+                        <td>Вища математика</td>
+                    </tr>
+                    <tr>
+                        <td>10:25 - 12:00</td>
+                        <td>Вища математика</td>
+                        <td>Вища математика</td>
+                        <td>Вища математика</td>
+                    </tr>
+                    <tr>
+                        <td>12:20 - 13:55</td>
+                        <td>Вища математика</td>
+                        <td>Вища математика</td>
+                        <td>Вища математика</td>
+                    </tr>
+                    <tr>
+                        <td>14:15 - 15:50</td>
+                        <td>-</td>
+                        <td>Вища математика</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>> Галерея_проєкту</h2>
+            <div class="gallery-container">
+                <img src="jonhpork1.jpg" alt="Скріншот 1" class="gallery-img">
+                <img src="johnpork2.jpg" alt="Скріншот 2" class="gallery-img">
+                <img src="johnpork3.jpg" alt="Скріншот 3" class="gallery-img">
+                <img src="johnpork4.jpg" alt="Скріншот 4" class="gallery-img">
+                <img src="johnpork5.jpg" alt="Скріншот 5" class="gallery-img">
+                <img src="johnpork6.jpg" alt="Скріншот 6" class="gallery-img">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-column">
+            <h3>Про нас</h3>
+            <p>Технологічний інститут майбутнього. Навчаємо створювати сучасні та оптимізовані веб-системи (Нас замінять нейромережі).</p>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Контакти</h3>
+            <ul class="footer-links">
+                <li>Email: dima.ua.kh@gmail.com</li>
+                <li>Телефон: +380 (99) 196-98-96</li>
+                <li>Кабінет: 67</li>
+            </ul>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Посилання</h3>
+            <ul class="footer-links">
+                <li><a href="#">Студентський портал</a></li>
+                <li><a href="#">Бібліотека</a></li>
+                <li><a href="#">Розклад іспитів</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
