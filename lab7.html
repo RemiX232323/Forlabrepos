@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 7: Flexbox та Grid</title>
+    <link rel="stylesheet" href="lab7_style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="lab4.html">Таблиці</a></li>
+                <li><a href="lab5.html">Форми</a></li>
+                <li><a href="lab6.html">Галерея</a></li>
+                <li><a href="lab7.html" class="active">Grid Layout (Лаб 7)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="team-section">
+            <h2>> Команда_проєкту</h2>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="avatar">СІ</div>
+                    <h3>Станіслав Іванченко</h3>
+                    <p>Чоловік</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">ДК</div>
+                    <h3>Діана Кліщук</h3>
+                    <p>Жінка</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">ДС</div>
+                    <h3>Дмитро Семенов</h3>
+                    <p>Чоловік</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">КМ</div>
+                    <h3>Крістіна Можаєва</h3>
+                    <p>Жінка</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">АШ</div>
+                    <h3>Анастасія Ширай</h3>
+                    <p>Жінка</p>
+                </div>
+                <div class="team-card">
+                    <div class="avatar">ДШ</div>
+                    <h3>Дмитро Шейко</h3>
+                    <p>Чоловік</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registration-section">
+            <h2>> Реєстрація_в_системі</h2>
+            <form class="grid-form" action="#" method="POST">
+                
+                <div class="form-group">
+                    <label for="fname">Ім'я:</label>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lname">Прізвище:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="email">Електронна пошта:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group full-width">
+                    <label for="pass">Пароль:</label>
+                    <input type="password" id="pass" name="pass" required>
+                </div>
+
+                <button type="submit" class="full-width">> Створити_акаунт</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="complex-footer">
+        <div class="footer-col">
+            <h3>> Навігація</h3>
+            <ul class="footer-nav">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Сервіси</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>> Контакти</h3>
+            <ul class="footer-nav">
+                <li>Тел: +380 (99) 196-98-96</li>
+                <li>Email: johnpork.ua.kh67@sys.com</li>
+                <li>Офіс: Term-67</li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>> Документація</h3>
+            <ul class="footer-nav">
+                <li><a href="#">API Cocks</a></li>
+                <li><a href="#">Умови використання</a></li>
+                <li><a href="#">Політика приватності</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h3>> Соцмережі</h3>
+            <ul class="footer-nav">
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Telegram</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ХПІ. Нейромережі нас замінять. ШІ захопить світ.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
