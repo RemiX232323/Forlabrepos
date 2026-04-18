@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superellipse Generator - Minimal UI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles7.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <header class="header">
+            <h1>Superellipse Generator</h1>
+            <button class="theme-toggle">☾</button>
+        </header>
+
+        <main class="grid-layout">
+            
+            <aside class="card parameters-card">
+                <h2>Parameters</h2>
+                
+                <div class="control-group">
+                    <div class="control-header">
+                        <span>Eccentricity (n)</span>
+                        <div class="val-box" id="val-n">0.5</div>
+                    </div>
+                    <input type="range" min="0" max="5" step="0.1" value="0.5" oninput="document.getElementById('val-n').innerText = this.value">
+                </div>
+
+                <div class="control-group">
+                    <div class="control-header">
+                        <span>Width</span>
+                        <div class="val-box" id="val-w">50</div>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" oninput="document.getElementById('val-w').innerText = this.value">
+                </div>
+
+                <div class="control-group">
+                    <div class="control-header">
+                        <span>Height</span>
+                        <div class="val-box" id="val-h">50</div>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" oninput="document.getElementById('val-h').innerText = this.value">
+                </div>
+
+                <div class="control-color">
+                    <span>Color</span>
+                    <div class="color-picker-wrap">
+                        <input type="color" value="#000000" oninput="document.getElementById('val-c').innerText = this.value.toUpperCase()">
+                        <span class="color-code" id="val-c">#000000</span>
+                    </div>
+                </div>
+
+                <div class="legend">
+                    n = 1: Diamond<br>
+                    n = 2: Circle<br>
+                    n > 2: Rounded rectangle<br>
+                    n → ∞: Rectangle
+                </div>
+            </aside>
+
+            <section class="preview-container">
+                
+                <div class="card preview-area">
+                    </div>
+
+                <div class="status-bar">
+                    <span>Current: 50 x 50, n = 0.5</span>
+                    <div class="color-dot"></div>
+                </div>
+
+                <div class="actions-grid">
+                    <button class="btn btn-dark">Download SVG</button>
+                    <button class="btn btn-light">Download PNG</button>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer-text">
+            Built with precision and care for mathematical beauty
+        </footer>
+    </div>
+
+</body>
+</html>

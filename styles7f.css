@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-yellow: #FFCC70;
+    --navbar-bg: #FFFADD;
+    --accent-yellow: #F0DE36;
+    --text-black: #000000;
+}
+
+body {
+    background-color: var(--bg-yellow);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.navbar {
+    width: 1455px;
+    height: 107px;
+    background-color: var(--navbar-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 60px;
+}
+
+.logo {
+    height: 75px;
+    width: auto;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.search-container {
+    width: 277px;
+    height: 40px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    font-size: 18px;
+    color: #D9D9D9;
+    background: transparent;
+}
+
+.search-icon-wrapper {
+    width: 75px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #E0E0E0;
+}
+
+.search-icon {
+    width: 39px;
+    height: 39px;
+    object-fit: contain;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-links li {
+    font-size: 24px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+}
+
+.nav-links li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-yellow);
+    transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+    width: 100%;
+}
+
+.nav-links li.active::after {
+    width: 100%;
+}
+
+.profile-card {
+    width: 123px;
+    height: 61px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+}
+
+.avatar {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chevron-icon {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+}
+
+.main-content {
+    width: 1455px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.card {
+    background-color: #FFFADD;
+    border-radius: 0px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-placeholder {
+    width: 100%;
+    height: 300px;
+    background-color: #f5f5f5;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: var(--text-black);
+}
+
+.card p {
+    color: #666666;
+    font-size: 16px;
+}
+
+.site-footer {
+    width: 1455px; 
+    background-color: var(--navbar-bg);
+    margin-top: 60px; 
+    padding: 30px 40px;
+    border-radius: 0px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.logo-footer {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #999999;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.footer-links li {
+    font-size: 16px;
+    color: var(--text-black);
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+}
+
+.footer-links li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-yellow);
+    transition: width 0.3s ease;
+}
+
+.footer-links li:hover::after {
+    width: 100%;
+}
